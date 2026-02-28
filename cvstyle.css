@@ -1,0 +1,32 @@
+.container{
+display: grid;
+grid-template-columns: 40% 60%;
+grid-template-areas:
+"entete entete"
+"gauche droite ";
+}
+.header{
+grid-area:entete;
+}
+
+.left{
+grid-area: gauche;
+border-right: 2px solid black;
+margin-left: 80px;
+}
+.right{
+grid-area: droite;
+margin-right: 80px;
+margin-left: 20px;
+background-color: aqua;
+
+}
+.header h1{
+text-align: center;
+}
+.left section{
+display: flex; 
+align-items: center; 
+margin-bottom: -38px;
+}
+
